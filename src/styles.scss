@@ -1,1 +1,87 @@
-/* You can add global styles to this file, and also import other style files */
+$chevyAzul: #154289;
+$chevyGrisClaro: #e1e1e1;
+$chevyGris: #707070;
+$chevyGrisOscuro: #4a4a4a;
+$chevyNegro: #232323;
+$chevyVino: #942d46;
+$chevyPurpura: #6b3176;
+
+body {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  margin: 0;
+  padding: 0;
+  background-image: url("assets/imagenes/960x0.jpg");
+  background-size: cover;
+}
+
+.chevy-input {
+  height: 40px;
+  background-color: $chevyGrisClaro;
+  color: $chevyGris;
+  padding-left: 5px;
+  width: 100%;
+  border-radius: 5px 5px 0px 0px;
+  border: 0px;
+  border-bottom: 3px solid $chevyGris;
+}
+
+.chevy-label {
+  color: $chevyGris;
+  font-family: Arial;
+  font-size: 15px;
+  position: absolute;
+  top: 10px;
+  left: 22px;
+}
+
+.chevy-input:active, .chevy-input:focus {
+  border: 0px;
+  border-bottom: 3px solid $chevyAzul;
+}
+
+.chevy-input:active ~ .chevy-label, .chevy-input:focus ~ .chevy-label, .chevy-input.ng-full ~ .chevy-label  {
+  color: $chevyAzul;
+  font-weight: bold;
+  top: -20px;
+  left: 15px;
+}
+
+.chevy-input.ng-invalid.ng-touched {
+  border: 1px solid $chevyVino;
+  border-bottom: 3px solid $chevyVino;
+}
+
+.btn-enviar {
+  display: block;
+  background-color: $chevyAzul;
+  color: white;
+  font-family: Arial;
+  font-weight: bold;
+  font-style: italic;
+  opacity: 1;
+  width: 180px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.btn-enviar:hover {
+  color: white;
+  opacity: 1;
+  background-color: $chevyPurpura;
+}
+
+.btn-enviar:disabled {
+  color: $chevyGrisClaro;
+  opacity: 1;
+  background-color: $chevyGris;
+}
+
+.enlace {
+  color: $chevyAzul;
+  text-decoration: underline;
+  cursor: pointer;
+}

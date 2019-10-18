@@ -1,0 +1,35 @@
+$chevyAzul: #154289;
+$chevyGrisClaro: #E1E1E1;
+$chevyGris: #707070;
+$chevyGrisOscuro: #4A4A4A;
+$chevyNegro: #232323;
+$chevyVino: #942D46;
+$chevyPurpura: #6B3176;
+
+.container {
+  max-width: 92%;
+}
+
+.info {
+  margin-left: -20px;
+  margin-right: 20px;
+  padding-right: 100px;
+}
+
+.titulo {
+  color: white;
+  font-family: Arial;
+  font-weight: bold;
+  font-size: 36px;
+}
+
+.subtitulo {
+  color: white;
+  font-family: Arial;
+  font-size: 16px;
+}
+
+.formulario {
+  background-color: rgba(225, 225, 225, 0.8);
+  color: $chevyGrisOscuro;
+}

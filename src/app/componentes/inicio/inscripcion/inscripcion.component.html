@@ -1,0 +1,79 @@
+<form *ngIf="inscripcionForm && paises" [formGroup]="inscripcionForm" (ngSubmit)="alEnviar()">
+
+
+  <p class="titulo">{{titulo}}</p>
+  <p class="subtitulo">{{subtitulo}}</p>
+
+
+  <div class="row">
+    <div class="col-12 form-group">
+      <input type="text" name="" id="nombre" formControlName="nombre" class="chevy-input" [ngClass]="{'ng-full': existeEntrada('nombre')}" [placeholder]="datosFormulario.nombre.etiqueta">
+      <!-- <label class="chevy-label">{{datosFormulario.nombre.etiqueta}}</label> -->
+    </div>
+  </div>
+
+  <div class="row">
+    <div class="col-6 form-group pr-2">
+      <select id="tipoDoc" formControlName="tipoDoc" class="chevy-input" [ngClass]="{'ng-full': existeEntrada('tipoDoc')}" placeholder="d.ff">
+        <option [ngValue]="null">{{datosFormulario.tipoDoc.etiqueta}}</option>
+        <option *ngFor="let td of datosFormulario.tipoDoc.opciones" [value]="td">{{td}}</option>
+      </select>
+      <!-- <label class="chevy-label">{{datosFormulario.tipoDoc.etiqueta}}</label> -->
+    </div>
+    <div class="col-6 form-group pl-2">
+      <input type="number" name="" id="numDoc" formControlName="numDoc" class="chevy-input" [ngClass]="{'ng-full': existeEntrada('numDoc')}" [placeholder]="datosFormulario.numDoc.etiqueta">
+      <!-- <label class="chevy-label">{{datosFormulario.numDoc.etiqueta}}</label> -->
+    </div>
+  </div>
+
+  <div class="row">
+    <div class="col-6 form-group pr-2">
+      <select id="pais" formControlName="pais" class="chevy-input" [ngClass]="{'ng-full': existeEntrada('pais')}">
+        <option [ngValue]="null">{{datosFormulario.pais.etiqueta}}</option>
+        <option *ngFor="let pais of paises" [value]="pais">{{pais}}</option>
+      </select>
+      <!-- <label class="chevy-label">{{datosFormulario.pais.etiqueta}}</label> -->
+    </div>
+    <div class="col-6 form-group pl-2">
+      <input type="number" name="" id="celular" formControlName="celular" class="chevy-input" [ngClass]="{'ng-full': existeEntrada('celular')}" [placeholder]="datosFormulario.celular.etiqueta">
+      <!-- <label class="chevy-label">{{datosFormulario.celular.etiqueta}}</label> -->
+    </div>
+  </div>
+
+  <div class="row">
+    <div class="col-12 form-group">
+      <input type="email" name="" id="correo" formControlName="correo" class="chevy-input" [ngClass]="{'ng-full': existeEntrada('correo')}" [placeholder]="datosFormulario.correo.etiqueta">
+      <!-- <label class="chevy-label">{{datosFormulario.correo.etiqueta}}</label> -->
+    </div>
+  </div>
+
+  <div class="row">
+    <div class="col-12 form-group condiciones">
+      <input type="checkbox" name="" id="condiciones" formControlName="condiciones">
+      Leí y acepto condiciones de la
+      <span class="enlace" (click)="abrirModal(contenido)">política de privacidad</span>
+    </div>
+  </div>
+
+  <button type="submit" class="btn btn-enviar" [disabled]="inscripcionForm.invalid">
+    ENVIAR
+  </button>
+
+</form>
+
+<ng-template #contenido let-modal>
+  <div class="modal-header">
+    <h5 class="modal-title" id="titulo-modal">{{tituloCondiciones}}</h5>
+    <button type="button" class="close" aria-label="Close" (click)="modal.dismiss('Botón X')">
+      <span aria-hidden="true">&times;</span>
+    </button>
+  </div>
+  <div class="modal-body">
+    <article class="">
+      {{textoCondiciones}}
+    </article>
+  </div>
+  <div class="modal-footer">
+    <button type="button" class="btn btn-enviar" (click)="modal.close('Botón aceptar')">Aceptar</button>
+  </div>
+</ng-template>

@@ -1,0 +1,35 @@
+$chevyAzul: #154289;
+$chevyGrisClaro: #E1E1E1;
+$chevyGris: #707070;
+$chevyGrisOscuro: #4A4A4A;
+$chevyNegro: #232323;
+$chevyVino: #942D46;
+$chevyPurpura: #6B3176;
+
+.titulo {
+  color: $chevyGrisOscuro;
+  font-family: Arial;
+  font-size: 20px;
+  font-weight: bold;
+  font-style: italic;
+  text-align: center;
+  margin-bottom: 5px;
+}
+
+.subtitulo {
+  color: $chevyGrisOscuro;
+  font-family: Arial;
+  font-weight: 300;
+  font-size: 16px;
+  text-align: center;
+  margin-bottom: 25px;
+}
+
+// .form-group {
+//   margin-bottom: 1.5rem;
+// }
+
+.condiciones {
+  font-size: 14px;
+}
+
