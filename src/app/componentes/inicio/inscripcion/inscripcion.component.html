@@ -7,43 +7,43 @@
 
   <div class="row">
     <div class="col-12 form-group">
-      <input type="text" name="" id="nombre" formControlName="nombre" class="chevy-input" [ngClass]="{'ng-full': existeEntrada('nombre')}" [placeholder]="datosFormulario.nombre.etiqueta">
-      <!-- <label class="chevy-label">{{datosFormulario.nombre.etiqueta}}</label> -->
+      <input type="text" name="" id="nombre" formControlName="nombre" class="ex-input" [ngClass]="{'ng-full': existeEntrada('nombre')}" [placeholder]="datosFormulario.nombre.etiqueta">
+      <!-- <label class="ex-label">{{datosFormulario.nombre.etiqueta}}</label> -->
     </div>
   </div>
 
   <div class="row">
     <div class="col-6 form-group pr-2">
-      <select id="tipoDoc" formControlName="tipoDoc" class="chevy-input" [ngClass]="{'ng-full': existeEntrada('tipoDoc')}" placeholder="d.ff">
+      <select id="tipoDoc" formControlName="tipoDoc" class="ex-input" [ngClass]="{'ng-full': existeEntrada('tipoDoc')}" placeholder="d.ff">
         <option [ngValue]="null">{{datosFormulario.tipoDoc.etiqueta}}</option>
         <option *ngFor="let td of datosFormulario.tipoDoc.opciones" [value]="td">{{td}}</option>
       </select>
-      <!-- <label class="chevy-label">{{datosFormulario.tipoDoc.etiqueta}}</label> -->
+      <!-- <label class="ex-label">{{datosFormulario.tipoDoc.etiqueta}}</label> -->
     </div>
     <div class="col-6 form-group pl-2">
-      <input type="number" name="" id="numDoc" formControlName="numDoc" class="chevy-input" [ngClass]="{'ng-full': existeEntrada('numDoc')}" [placeholder]="datosFormulario.numDoc.etiqueta">
-      <!-- <label class="chevy-label">{{datosFormulario.numDoc.etiqueta}}</label> -->
+      <input type="number" name="" id="numDoc" formControlName="numDoc" class="ex-input" [ngClass]="{'ng-full': existeEntrada('numDoc')}" [placeholder]="datosFormulario.numDoc.etiqueta">
+      <!-- <label class="ex-label">{{datosFormulario.numDoc.etiqueta}}</label> -->
     </div>
   </div>
 
   <div class="row">
     <div class="col-6 form-group pr-2">
-      <select id="pais" formControlName="pais" class="chevy-input" [ngClass]="{'ng-full': existeEntrada('pais')}">
+      <select id="pais" formControlName="pais" class="ex-input" [ngClass]="{'ng-full': existeEntrada('pais')}">
         <option [ngValue]="null">{{datosFormulario.pais.etiqueta}}</option>
         <option *ngFor="let pais of paises" [value]="pais">{{pais}}</option>
       </select>
-      <!-- <label class="chevy-label">{{datosFormulario.pais.etiqueta}}</label> -->
+      <!-- <label class="ex-label">{{datosFormulario.pais.etiqueta}}</label> -->
     </div>
     <div class="col-6 form-group pl-2">
-      <input type="number" name="" id="celular" formControlName="celular" class="chevy-input" [ngClass]="{'ng-full': existeEntrada('celular')}" [placeholder]="datosFormulario.celular.etiqueta">
-      <!-- <label class="chevy-label">{{datosFormulario.celular.etiqueta}}</label> -->
+      <input type="number" name="" id="celular" formControlName="celular" class="ex-input" [ngClass]="{'ng-full': existeEntrada('celular')}" [placeholder]="datosFormulario.celular.etiqueta">
+      <!-- <label class="ex-label">{{datosFormulario.celular.etiqueta}}</label> -->
     </div>
   </div>
 
   <div class="row">
     <div class="col-12 form-group">
-      <input type="email" name="" id="correo" formControlName="correo" class="chevy-input" [ngClass]="{'ng-full': existeEntrada('correo')}" [placeholder]="datosFormulario.correo.etiqueta">
-      <!-- <label class="chevy-label">{{datosFormulario.correo.etiqueta}}</label> -->
+      <input type="email" name="" id="correo" formControlName="correo" class="ex-input" [ngClass]="{'ng-full': existeEntrada('correo')}" [placeholder]="datosFormulario.correo.etiqueta">
+      <!-- <label class="ex-label">{{datosFormulario.correo.etiqueta}}</label> -->
     </div>
   </div>
 

@@ -3,7 +3,7 @@
   "version": 1,
   "newProjectRoot": "projects",
   "projects": {
-    "chevyplan": {
+    "reactive-forms-ex": {
       "projectType": "application",
       "schematics": {
         "@schematics/angular:component": {
@@ -17,7 +17,7 @@
         "build": {
           "builder": "@angular-devkit/build-angular:browser",
           "options": {
-            "outputPath": "dist/chevyplan",
+            "outputPath": "dist/reactive-forms-ex",
             "index": "src/index.html",
             "main": "src/main.ts",
             "polyfills": "src/polyfills.ts",
@@ -63,18 +63,18 @@
         "serve": {
           "builder": "@angular-devkit/build-angular:dev-server",
           "options": {
-            "browserTarget": "chevyplan:build"
+            "browserTarget": "reactive-forms-ex:build"
           },
           "configurations": {
             "production": {
-              "browserTarget": "chevyplan:build:production"
+              "browserTarget": "reactive-forms-ex:build:production"
             }
           }
         },
         "extract-i18n": {
           "builder": "@angular-devkit/build-angular:extract-i18n",
           "options": {
-            "browserTarget": "chevyplan:build"
+            "browserTarget": "reactive-forms-ex:build"
           }
         },
         "test": {
@@ -112,15 +112,15 @@
           "builder": "@angular-devkit/build-angular:protractor",
           "options": {
             "protractorConfig": "e2e/protractor.conf.js",
-            "devServerTarget": "chevyplan:serve"
+            "devServerTarget": "reactive-forms-ex:serve"
           },
           "configurations": {
             "production": {
-              "devServerTarget": "chevyplan:serve:production"
+              "devServerTarget": "reactive-forms-ex:serve:production"
             }
           }
         }
       }
     }},
-  "defaultProject": "chevyplan"
+  "defaultProject": "reactive-forms-ex"
 }

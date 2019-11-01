@@ -13,8 +13,8 @@ export class InscripcionComponent implements OnInit {
   inscripcionForm: FormGroup;
   paises: string[];
 
-  titulo = '¿QUÉ ESPERAS PARA CUMPLIR TU SUEÑO?';
-  subtitulo = 'Deja tus datos y nos comunicaremos contigo.';
+  titulo = 'TÍTULO';
+  subtitulo = 'Subtítulo';
   tituloCondiciones = 'Política de privacidad';
   textoCondiciones = 'Esta es la política de privacidad';
   datosFormulario = {

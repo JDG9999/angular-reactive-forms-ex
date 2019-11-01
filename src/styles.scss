@@ -1,10 +1,10 @@
-$chevyAzul: #154289;
-$chevyGrisClaro: #e1e1e1;
-$chevyGris: #707070;
-$chevyGrisOscuro: #4a4a4a;
-$chevyNegro: #232323;
-$chevyVino: #942d46;
-$chevyPurpura: #6b3176;
+$exAzul: #154289;
+$exGrisClaro: #e1e1e1;
+$exGris: #707070;
+$exGrisOscuro: #4a4a4a;
+$exNegro: #232323;
+$exVino: #942d46;
+$exPurpura: #6b3176;
 
 body {
   position: absolute;
@@ -14,23 +14,23 @@ body {
   right: 0;
   margin: 0;
   padding: 0;
-  background-image: url("assets/imagenes/960x0.jpg");
+  background-image: url("assets/imagenes/Blue-Background.jpg");
   background-size: cover;
 }
 
-.chevy-input {
+.ex-input {
   height: 40px;
-  background-color: $chevyGrisClaro;
-  color: $chevyGris;
+  background-color: $exGrisClaro;
+  color: $exGris;
   padding-left: 5px;
   width: 100%;
   border-radius: 5px 5px 0px 0px;
   border: 0px;
-  border-bottom: 3px solid $chevyGris;
+  border-bottom: 3px solid $exGris;
 }
 
-.chevy-label {
-  color: $chevyGris;
+.ex-label {
+  color: $exGris;
   font-family: Arial;
   font-size: 15px;
   position: absolute;
@@ -38,26 +38,26 @@ body {
   left: 22px;
 }
 
-.chevy-input:active, .chevy-input:focus {
+.ex-input:active, .ex-input:focus {
   border: 0px;
-  border-bottom: 3px solid $chevyAzul;
+  border-bottom: 3px solid $exAzul;
 }
 
-.chevy-input:active ~ .chevy-label, .chevy-input:focus ~ .chevy-label, .chevy-input.ng-full ~ .chevy-label  {
-  color: $chevyAzul;
+.ex-input:active ~ .ex-label, .ex-input:focus ~ .ex-label, .ex-input.ng-full ~ .ex-label  {
+  color: $exAzul;
   font-weight: bold;
   top: -20px;
   left: 15px;
 }
 
-.chevy-input.ng-invalid.ng-touched {
-  border: 1px solid $chevyVino;
-  border-bottom: 3px solid $chevyVino;
+.ex-input.ng-invalid.ng-touched {
+  border: 1px solid $exVino;
+  border-bottom: 3px solid $exVino;
 }
 
 .btn-enviar {
   display: block;
-  background-color: $chevyAzul;
+  background-color: $exAzul;
   color: white;
   font-family: Arial;
   font-weight: bold;
@@ -71,17 +71,17 @@ body {
 .btn-enviar:hover {
   color: white;
   opacity: 1;
-  background-color: $chevyPurpura;
+  background-color: $exPurpura;
 }
 
 .btn-enviar:disabled {
-  color: $chevyGrisClaro;
+  color: $exGrisClaro;
   opacity: 1;
-  background-color: $chevyGris;
+  background-color: $exGris;
 }
 
 .enlace {
-  color: $chevyAzul;
+  color: $exAzul;
   text-decoration: underline;
   cursor: pointer;
 }

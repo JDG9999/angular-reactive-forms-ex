@@ -1,10 +1,10 @@
-$chevyAzul: #154289;
-$chevyGrisClaro: #E1E1E1;
-$chevyGris: #707070;
-$chevyGrisOscuro: #4A4A4A;
-$chevyNegro: #232323;
-$chevyVino: #942D46;
-$chevyPurpura: #6B3176;
+$exAzul: #154289;
+$exGrisClaro: #E1E1E1;
+$exGris: #707070;
+$exGrisOscuro: #4A4A4A;
+$exNegro: #232323;
+$exVino: #942D46;
+$exPurpura: #6B3176;
 
 .container {
   max-width: 92%;
@@ -31,5 +31,5 @@ $chevyPurpura: #6B3176;
 
 .formulario {
   background-color: rgba(225, 225, 225, 0.8);
-  color: $chevyGrisOscuro;
+  color: $exGrisOscuro;
 }

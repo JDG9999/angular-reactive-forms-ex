@@ -7,8 +7,8 @@ import { Component, OnInit } from '@angular/core';
 })
 export class InicioComponent implements OnInit {
 
-  titulo = 'Plan Prográmate';
-  subtitulo = 'Ahora tú planeas cuándo serás adjudicado para tu nuevo vehículo Chevrolet.';
+  titulo = 'TÍTULO';
+  subtitulo = 'Subtítulo.';
 
   constructor() { }
 

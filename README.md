@@ -1,6 +1,11 @@
-# Chevyplan
+# Reactive-forms-ex
 
-Página de inicio 'Plan Prográmate' para Chevyplan. Desarrollado en Angular 8.
+Simple app developed in Angular exemplifying some basic functionality:
+
+- Reactive forms validation
+- REST API consumption
+
+---
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 8.0.3.
 
